@@ -1,0 +1,94 @@
+header {
+  background: var(--Black, #232536);
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0 26px 0;
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 83px;
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        .nav-menu__items {
+          text-decoration: none;
+          color: var(--Light, #fff);
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 28px; /* 175% */
+        }
+        .active {
+          color: #247774;
+        }
+      }
+      .btn-login {
+        padding: 16px 48px;
+        background: var(--Light, #fff);
+        outline: none;
+        border: none;
+        cursor: pointer;
+        .nav-menu__items {
+          text-decoration: none;
+          color: var(--Black, #232536);
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 24px; /* 133.333% */
+        }
+        .active {
+          color: #247774;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .container {
+    width: 90%;
+  }
+  // header {
+  //   nav {
+  //     justify-content: space-around;
+  //   }
+  // }
+}
+@media only screen and (max-width: 768px) {
+  header {
+    nav {
+      .nav-menu {
+        gap: 30px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 650px) {
+  header {
+    nav {
+      display: block;
+      padding: 25px 0 26px 20px;
+    }
+  }
+}
+@media only screen and (max-width: 531px) {
+  header {
+    nav {
+      .nav-menu {
+        display: block;
+        ul {
+          display: block;
+          padding: 20px 0;
+          .nav-menu__items {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

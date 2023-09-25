@@ -1,0 +1,31 @@
+section {
+  .popular {
+    color: #000;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 133.333% */
+    letter-spacing: -2px;
+    padding: 94px 0 64px;
+  }
+  // .row {
+  //   // display: grid;
+  //   // grid-template-columns: repeat(3, auto);
+  //   // justify-content: center;
+  //   // gap: 32px;
+  // }
+}
+.category {
+  padding: 69px 0 73px 0;
+  .choose {
+    color: var(--Black, #232536);
+    text-align: center;
+    /* Heading H2 */
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 133.333% */
+    letter-spacing: -2px;
+    padding: 0 0 50px 0;
+  }
+}

@@ -1,0 +1,40 @@
+.one-category {
+  background: var(--Lavender, #f4f0f8);
+  padding: 80px 0 80px 0;
+  text-align: center;
+  .one-category__h1 {
+    color: var(--Black, #232536);
+    text-align: center;
+
+    /* Display */
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px; /* 114.286% */
+    letter-spacing: -2px;
+  }
+  .one-category__p {
+    color: var(--Medium-grey, #6d6e76);
+    text-align: center;
+    padding: 16px 0 32px 0;
+    /* Body 1 */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+  }
+  .one-category__text {
+    color: var(--Black, #232536);
+    text-align: center;
+
+    /* Cap 03 */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 125% */
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,47 @@
+.card-link {
+  text-decoration: none;
+  .card-category {
+    width: 296px;
+    height: 221.072px;
+    border: 1px solid var(--Medium-grey, #999);
+    margin-left: 20px;
+    &:active {
+      background: var(--Yellow, #ffd050);
+      border: 1px solid #fff;
+    }
+    .card {
+      width: 48px;
+      height: 46.541px;
+      margin-top: 31px;
+      margin-left: 32px;
+      padding: 5px 0 12px 0;
+      img {
+        width: 70px;
+        height: 50px;
+      }
+    }
+    .category-textes {
+      padding: 10px 0 0 32px;
+      .category-h1 {
+        color: var(--Black, #232536);
+        /* Heading H3 */
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px; /* 142.857% */
+        letter-spacing: -1px;
+      }
+      .category-p {
+        color: var(--Medium-grey, #6d6e76);
+
+        /* Body 1 */
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; /* 175% */
+        width: 232px;
+      }
+    }
+  }
+}
