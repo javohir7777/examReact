@@ -1,7 +1,9 @@
 import { Fragment, useEffect, useState } from "react";
-import "./Home.scss";
 import { toast } from "react-toastify";
 import { requies } from "../server";
+
+import homeUImg from "../assets/home/man.png";
+import "./Home.scss";
 const Home = () => {
   const [data, setData] = useState({});
   // const [photo, setPhoto] = useState("");
@@ -30,13 +32,13 @@ const Home = () => {
     month: "short",
     day: "numeric",
   });
-  // console.log(data?.category?.photo);
+  console.log(data);
   return (
     <Fragment>
       <div
         className="bg-img"
         style={{
-          backgroundImage: `url(https://blog-backend-production-a0a8.up.railway.app/upload/${data?.category?.photo}.jpg)`,
+          backgroundImage: `url(${homeUImg})`,
         }}
       >
         <div className="container">

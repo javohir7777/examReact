@@ -80,6 +80,7 @@ const HomePage = () => {
         <h1 className="popular">Popular blogs</h1>
         <div className="row">
           <Carousel
+            // style={{ zIndex: "-1" }}
             responsive={responsive}
             keyBoardControl={true}
             autoPlay={false}

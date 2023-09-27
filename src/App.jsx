@@ -29,12 +29,12 @@ function App() {
           <Route path="category/:id" element={<CategoryPage />} />
           <Route path="my-posts" element={<MyPostsPage />} />
 
-          {/* {isAuthenticed ? ( */}
-          <Route path="login" element={<LoginPage />} />
-          {/* ) : null} */}
-          {isAuthenticed ? (
-            <Route path="register" element={<RegisterPage />} />
-          ) : null}
+          {isAuthenticed ? null : (
+            <Route path="login" element={<LoginPage />} />
+          )}
+
+          <Route path="register" element={<RegisterPage />} />
+
           {isAuthenticed ? (
             <Route path="account" element={<AccountPage />} />
           ) : null}

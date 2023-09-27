@@ -1,9 +1,10 @@
 header {
   background: var(--Black, #232536);
-  position: sticky;
+  position: fixed;
   width: 100%;
+  left: 0;
   top: 0;
-  z-index: 1;
+  z-index: 99999;
   nav {
     display: flex;
     align-items: center;
