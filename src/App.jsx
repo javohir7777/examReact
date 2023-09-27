@@ -10,8 +10,13 @@ import LoginPage from "./pages/LoginPage";
 import MyPostsPage from "./pages/MyPostsPage";
 import RegisterPage from "./pages/RegisterPage";
 import { ToastContainer } from "react-toastify";
+import MyBlogsPage from "./pages/MyBlogsPage";
+import NotFoundPage from "./pages/NotFoundPage";
+import { useContext } from "react";
+import { AuthContext } from "./context/AuthContext";
 
 function App() {
+  const { isAuthenticed } = useContext(AuthContext);
   return (
     <BrowserRouter>
       <ToastContainer />
@@ -23,10 +28,20 @@ function App() {
           <Route path="blog/:id" element={<BlogPostPage />} />
           <Route path="category/:id" element={<CategoryPage />} />
           <Route path="my-posts" element={<MyPostsPage />} />
+
+          {/* {isAuthenticed ? ( */}
           <Route path="login" element={<LoginPage />} />
-          <Route path="register" element={<RegisterPage />} />
-          <Route path="account" element={<AccountPage />} />
+          {/* ) : null} */}
+          {isAuthenticed ? (
+            <Route path="register" element={<RegisterPage />} />
+          ) : null}
+          {isAuthenticed ? (
+            <Route path="account" element={<AccountPage />} />
+          ) : null}
+
+          <Route path="my-blogs" element={<MyBlogsPage />} />
         </Route>
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
   );

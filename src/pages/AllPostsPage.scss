@@ -1,0 +1,18 @@
+.all-postss {
+  .all-posts {
+    .all-posts__h1 {
+      color: var(--Black, #232536);
+      padding: 0 0 20px;
+      /* Heading H1 */
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 64px; /* 133.333% */
+      letter-spacing: -2px;
+    }
+    .all-post__basis {
+      padding: 64px 0 100px 0;
+     
+    }
+  }
+}

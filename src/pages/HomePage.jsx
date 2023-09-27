@@ -86,7 +86,6 @@ const HomePage = () => {
             showDots={false}
             infinite={true}
             autoPlaySpeed={100}
-            // swipeable={true}
           >
             {posts.map((post) => (
               <Card key={post._id} post={post} />
@@ -104,7 +103,6 @@ const HomePage = () => {
           showDots={false}
           infinite={true}
           autoPlaySpeed={100}
-          // swipeable={true}
         >
           {category.map((post) => (
             <Category key={post._id} post={post} />

@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 import { requies } from "../server";
 const Home = () => {
   const [data, setData] = useState({});
-  const [photo, setPhoto] = useState("");
+  // const [photo, setPhoto] = useState("");
   const [time, setTime] = useState("");
 
   useEffect(() => {
@@ -13,11 +13,13 @@ const Home = () => {
   const getData = async () => {
     try {
       const { data } = await requies.get(`/post/lastone/`);
-      console.log(data);
       setData(data);
-      setPhoto(
-        `https://blog-backend-production-a0a8.up.railway.app/upload/${data?.photo._id}.jpg`
-      );
+      // setPhoto(
+      // `https://blog-backend-production-a0a8.up.railway.app/upload/${
+      //   data?.category?.photo
+      // }.${data?.photo?.name.split(".")[1]}`
+      // );
+      // console.log(data?.photo?.name.split(".")[1]);
       setTime(data?.createdAt.split("T")[0]);
     } catch (er) {
       toast.error("Error");
@@ -28,9 +30,15 @@ const Home = () => {
     month: "short",
     day: "numeric",
   });
+  // console.log(data?.category?.photo);
   return (
     <Fragment>
-      <div className="bg-img" style={{ backgroundImage: `url(${photo})` }}>
+      <div
+        className="bg-img"
+        style={{
+          backgroundImage: `url(https://blog-backend-production-a0a8.up.railway.app/upload/${data?.category?.photo}.jpg)`,
+        }}
+      >
         <div className="container">
           <p className="bg-title">
             Posted on <span>{data?.category?.name}</span>

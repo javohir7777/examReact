@@ -1,11 +1,26 @@
 header {
   background: var(--Black, #232536);
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 1;
   nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 25px 0 26px 0;
-
+    .nav-brand {
+      .nav-menu__items {
+        color: var(--Yellow, #ffd050);
+        text-decoration: none;
+        /* Body 1 */
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; /* 175% */
+      }
+    }
     .nav-menu {
       display: flex;
       align-items: center;

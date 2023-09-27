@@ -1,16 +1,20 @@
 import PropTypes from "prop-types";
 import "./AllCategories.scss";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 // import { Link } from "react-router-dom";
 
 const AllCategories = ({ categoryies }) => {
   return (
     <div className="categoryies-flex container">
       {/* <Link to={`blog/${categoryies._id}`}> */}
-      <img
+      <LazyLoadImage
         src={`https://blog-backend-production-a0a8.up.railway.app/upload/${
           categoryies?.photo?._id
         }.${categoryies?.photo?.name.slice(-3)}`}
-        alt=""
+        effect="blur"
+        alt={`https://blog-backend-production-a0a8.up.railway.app/upload/${
+          categoryies?.photo?._id
+        }.${categoryies?.photo?.name.slice(-3)}`}
       />
       {/* </Link> */}
       <div className="categoryies-texts">
