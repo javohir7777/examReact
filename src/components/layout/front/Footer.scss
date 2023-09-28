@@ -7,7 +7,7 @@ footer {
     justify-content: space-between;
     .text {
       .text-body {
-        color: var(--Light, #fff);
+        color: #fff !important;
 
         /* Body 1 */
         font-family: Inter;
@@ -24,6 +24,7 @@ footer {
     }
   }
 }
+
 @media only screen and (max-width: 480px) {
   footer {
     .footer-flex {

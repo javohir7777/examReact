@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+// import { LazyLoadImage } from "react-lazy-load-image-component";
 
 import "./Card.scss";
 
@@ -11,10 +11,11 @@ const Card = ({ post }) => {
     month: "short",
     day: "numeric",
   });
+  console.log(post);
   return (
     <Link to={`blog/${post._id}`} className="card-decoration">
       <div className="card">
-        <LazyLoadImage
+        {/* <LazyLoadImage
           src={`https://blog-backend-production-a0a8.up.railway.app/upload/${
             post?.photo?._id
           }.${post?.photo?.name.split(".")[1]}`}
@@ -22,7 +23,7 @@ const Card = ({ post }) => {
           alt={`https://blog-backend-production-a0a8.up.railway.app/upload/${
             post?.photo?._id
           }.${post?.photo?.name.split(".")[1]}`}
-        />
+        /> */}
         <div className="cart-title">
           <p className="cart-name">
             By <span>{post?.user?.first_name}</span> l {newData}{" "}

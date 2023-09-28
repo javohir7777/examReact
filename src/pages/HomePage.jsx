@@ -92,7 +92,6 @@ const HomePage = () => {
               <Card key={post._id} post={post} />
             ))}
           </Carousel>
-          <hr />
         </div>
       </section>
       <div className="container category">

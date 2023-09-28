@@ -32,7 +32,7 @@ const AccountPage = () => {
       Cookies.set(TOKEN, token);
       setIsAuthenticed(false);
       Cookies.remove(TOKEN);
-      navigate("/login");
+      navigate("/");
     } catch (err) {
       toast.error("Error");
     }

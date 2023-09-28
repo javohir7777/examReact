@@ -3,10 +3,10 @@ import { toast } from "react-toastify";
 import { requies } from "../server";
 
 import homeUImg from "../assets/home/man.png";
+
 import "./Home.scss";
 const Home = () => {
   const [data, setData] = useState({});
-  // const [photo, setPhoto] = useState("");
   const [time, setTime] = useState("");
 
   useEffect(() => {

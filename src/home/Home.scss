@@ -83,3 +83,13 @@
     cursor: pointer;
   }
 }
+
+@media only screen and (max-width: 992px) {
+  .bg-img {
+    .bg-text {
+      width: 600px;
+      /* Display */
+      font-size: 46px;
+    }
+  }
+}

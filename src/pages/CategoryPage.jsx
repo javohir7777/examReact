@@ -40,11 +40,10 @@ const CategoryPage = () => {
     (post) => post.category.name === category.name
   );
 
-
   return (
     <div>
       <CategoryOne category={category} />
-      <Search setFilteredPosts={setFilteredPosts}/>
+      <Search setFilteredPosts={setFilteredPosts} />
       {filteredPost.map((categoryies) => (
         <AllCategories key={categoryies._id} categoryies={categoryies} />
       ))}
