@@ -46,7 +46,7 @@ const CategoryPage = () => {
   // );
 
   let filteredPost = filteredPosts.filter(
-    (post) => post.name !== category.name
+    (post) => post.name === category.name
   );
 
   return (
