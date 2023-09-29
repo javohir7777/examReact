@@ -5,6 +5,7 @@ import { requies } from "../server";
 import homeUImg from "../assets/home/man.png";
 
 import "./Home.scss";
+import { Link } from "react-router-dom";
 const Home = () => {
   const [data, setData] = useState({});
   const [time, setTime] = useState("");
@@ -56,7 +57,9 @@ const Home = () => {
             | {vaqt}
           </p>
           <p className="bg-texts">{data?.category?.description}</p>
-          <button className="btn-read">Read More {">"}</button>
+          <Link to="/posts" className="btn-read">
+            Read More {">"}
+          </Link>
         </div>
       </div>
     </Fragment>
