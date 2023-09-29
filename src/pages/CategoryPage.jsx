@@ -31,13 +31,22 @@ const CategoryPage = () => {
       const {
         data: { data },
       } = await requies.get("post");
+      console.log(data);
       setFilteredPosts(data);
     } catch (er) {
       toast.error("Error");
     }
   };
+
+  // console.log(category);
+  // console.log(
+  //   [...filteredPosts].map((ell) => {
+  //     console.log(ell.title);
+  //   }).title
+  // );
+
   let filteredPost = filteredPosts.filter(
-    (post) => post.category.name === category.name
+    (post) => post.name !== category.name
   );
 
   return (
